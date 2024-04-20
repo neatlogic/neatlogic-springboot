@@ -129,7 +129,7 @@ public class NeatLogicApplication {
     -XX:+PrintGCTimeStamps
     -XX:+HeapDumpOnOutOfMemoryError
     -verbose:gc
-    -Xloggc:/neatlogic/logs
+    -Xloggc:/neatlogic/logs/gc.log
     -Djava.io.tmpdir=/neatlogic/tmp
     -Djava.awt.headless=true
     -DenableNoSecret=true
