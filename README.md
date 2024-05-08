@@ -37,5 +37,6 @@ neatlogic-springboot 使用springboot框架启动neatlogic后端项目
     //确保JVM使用UTF-8编码来解释和处理文本数据,否则可能会导致中文乱码
     -Dfile.encoding=UTF-8
 ```
-
-3. 
+![输入图片说明](readme/configurations.png)
+3. 启动服务即可
+![输入图片说明](readme/start.png)
