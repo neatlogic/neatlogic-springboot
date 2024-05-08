@@ -21,9 +21,9 @@ neatlogic-springboot 使用springboot框架启动neatlogic后端项目
 ```
 
 ### 研发环境IntelliJ IDEA启动项目
-需要将config目录标记为资源根目录
+1. 需要将config目录标记为资源根目录
 ![输入图片说明](https://foruda.gitee.com/images/1715155326732798649/bd6d72a4_12375900.png "屏幕截图")
-再设置VM options如下：
+2. 设置VM options如下：
 ```
     //nacos配置，会优先使用nacos，获取不到config则会从config.properties中获取
     -Dnacos.home=192.168.0.10:8848
@@ -37,4 +37,5 @@ neatlogic-springboot 使用springboot框架启动neatlogic后端项目
     //确保JVM使用UTF-8编码来解释和处理文本数据,否则可能会导致中文乱码
     -Dfile.encoding=UTF-8
 ```
-![输入图片说明](https://foruda.gitee.com/images/1715154839073911048/3635bf08_12375900.png "屏幕截图")
+
+3. 
