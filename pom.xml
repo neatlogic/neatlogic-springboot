@@ -22,10 +22,10 @@
         <profile>
             <id>commercial</id>
             <dependencies>
-                <dependency>
-                    <groupId>com.neatlogic</groupId>
-                    <artifactId>neatlogic-master</artifactId>
-                </dependency>
+<!--                <dependency>-->
+<!--                    <groupId>com.neatlogic</groupId>-->
+<!--                    <artifactId>neatlogic-master</artifactId>-->
+<!--                </dependency>-->
                 <dependency>
                     <groupId>com.neatlogic</groupId>
                     <artifactId>neatlogic-codehub</artifactId>
