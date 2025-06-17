@@ -22,10 +22,10 @@
         <profile>
             <id>commercial</id>
             <dependencies>
-<!--                <dependency>-->
-<!--                    <groupId>com.neatlogic</groupId>-->
-<!--                    <artifactId>neatlogic-master</artifactId>-->
-<!--                </dependency>-->
+                <!--                <dependency>-->
+                <!--                    <groupId>com.neatlogic</groupId>-->
+                <!--                    <artifactId>neatlogic-master</artifactId>-->
+                <!--                </dependency>-->
                 <dependency>
                     <groupId>com.neatlogic</groupId>
                     <artifactId>neatlogic-codehub</artifactId>
@@ -74,6 +74,10 @@
                     <groupId>com.neatlogic</groupId>
                     <artifactId>neatlogic-itsm-commercial</artifactId>
                 </dependency>
+                <dependency>
+                    <groupId>com.neatlogic</groupId>
+                    <artifactId>neatlogic-alert-commercial</artifactId>
+                </dependency>
             </dependencies>
         </profile>
     </profiles>
@@ -106,7 +110,7 @@
                     <groupId>org.springframework.boot</groupId>
                     <artifactId>spring-boot-starter-json</artifactId>
                 </exclusion>
-				<exclusion>
+                <exclusion>
                     <groupId>org.springframework</groupId>
                     <artifactId>spring-aop</artifactId>
                 </exclusion>
@@ -197,6 +201,10 @@
         <dependency>
             <groupId>com.neatlogic</groupId>
             <artifactId>neatlogic-rdm</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.neatlogic</groupId>
+            <artifactId>neatlogic-alert</artifactId>
         </dependency>
         <dependency>
             <groupId>com.neatlogic</groupId>
