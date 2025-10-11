@@ -90,9 +90,9 @@ import org.springframework.context.ConfigurableApplicationContext;
 public class NeatLogicApplication {
     /*
     生产环境部署项目
-    将neatlogic-springboot模块打成neatlogic-springboot-0.3.0.0-SNAPSHOT.jar，随便放在某个目录下，然后将本模块下的config目录复制到该目录下，如下所示：
+    将neatlogic-springboot模块打成neatlogic-springboot-0.4.0.0-SNAPSHOT.jar，随便放在某个目录下，然后将本模块下的config目录复制到该目录下，如下所示：
     /neatloigc
-        neatlogic-springboot-0.3.0.0-SNAPSHOT.jar
+        neatlogic-springboot-0.4.0.0-SNAPSHOT.jar
         config
             application.properties
             config.properties
@@ -121,7 +121,7 @@ public class NeatLogicApplication {
     -Djava.awt.headless=true
     -DenableNoSecret=true
     -Xbootclasspath/a:./config
-    -jar neatlogic-springboot-0.3.0.0-SNAPSHOT.jar
+    -jar neatlogic-springboot-0.4.0.0-SNAPSHOT.jar
     */
 
     /*

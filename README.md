@@ -4,11 +4,11 @@
 neatlogic-springboot 使用springboot框架启动neatlogic后端项目
 
 ### linux环境部署项目
-1. 将neatlogic-springboot模块通过maven打成neatlogic-springboot-0.3.0.0-SNAPSHOT.jar
+1. 将neatlogic-springboot模块通过maven打成neatlogic-springboot-0.4.0.0-SNAPSHOT.jar
 2. 将上述打出来的jar和本模块下的config目录复制到同一个目录目录下，如下所示：
 ```
     -neatloigc
-        -neatlogic-springboot-0.3.0.0-SNAPSHOT.jar
+        -neatlogic-springboot-0.4.0.0-SNAPSHOT.jar
         -config
             -application.properties
             -config.properties
@@ -17,7 +17,7 @@ neatlogic-springboot 使用springboot框架启动neatlogic后端项目
 ```
 3. 在jar所在目录执行启动命令
 ```
-   java -Dlog4j.home=/neatlogic/logs -Dlog4j.priority=trace -Dfile.encoding=UTF-8 -Dnacos.home=192.168.0.10:8848 -Dnacos.namespace=neatlogic -DenableNoSecret=true -Xdebug -Xnoagent -Xrunjdwp:transport=dt_socket,server=y,suspend=n,address=5005 -XX:+UseConcMarkSweepGC -XX:+PrintGCDetails -XX:+PrintGCTimeStamps -XX:+HeapDumpOnOutOfMemoryError -verbose:gc -Xloggc:/neatlogic/logs/gc.log -Djava.io.tmpdir=/neatlogic/tmp -Djava.awt.headless=true -DenableNoSecret=true -Xbootclasspath/a:./config -jar neatlogic-springboot-0.3.0.0-SNAPSHOT.jar
+   java -Dlog4j.home=/neatlogic/logs -Dlog4j.priority=trace -Dfile.encoding=UTF-8 -Dnacos.home=192.168.0.10:8848 -Dnacos.namespace=neatlogic -DenableNoSecret=true -Xdebug -Xnoagent -Xrunjdwp:transport=dt_socket,server=y,suspend=n,address=5005 -XX:+UseConcMarkSweepGC -XX:+PrintGCDetails -XX:+PrintGCTimeStamps -XX:+HeapDumpOnOutOfMemoryError -verbose:gc -Xloggc:/neatlogic/logs/gc.log -Djava.io.tmpdir=/neatlogic/tmp -Djava.awt.headless=true -DenableNoSecret=true -Xbootclasspath/a:./config -jar neatlogic-springboot-0.4.0.0-SNAPSHOT.jar
 ```
 
 ### 研发环境IntelliJ IDEA启动项目
