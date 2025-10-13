@@ -89,7 +89,7 @@ import org.springframework.context.ConfigurableApplicationContext;
 )
 public class NeatLogicApplication {
     /*
-    生产环境部署项目
+    Linux环境部署项目
     将neatlogic-springboot模块打成neatlogic-springboot-0.4.0.0-SNAPSHOT.jar，随便放在某个目录下，然后将本模块下的config目录复制到该目录下，如下所示：
     /neatloigc
         neatlogic-springboot-0.4.0.0-SNAPSHOT.jar
@@ -115,6 +115,36 @@ public class NeatLogicApplication {
     -Djava.awt.headless=true
     -DenableNoSecret=true
     -Xbootclasspath/a:./config
+    -jar neatlogic-springboot-0.4.0.0-SNAPSHOT.jar
+    */
+
+    /*
+    Windows环境部署项目
+    将neatlogic-springboot模块打成neatlogic-springboot-0.4.0.0-SNAPSHOT.jar，随便放在某个目录下，然后将本模块下的config目录复制到该目录下，如下所示：
+    /neatloigc
+        neatlogic-springboot-0.4.0.0-SNAPSHOT.jar
+        logs
+        config
+            application.properties
+            config.properties
+            logback.xml
+            serverid.conf
+
+    执行命令时将下面命令转成一行，参数之间用空格隔开
+
+    java
+    "-Dlog4j.home=D:\\neatlogic\\logs"
+    "-Dlog4j.priority=trace"
+    "-Dfile.encoding=UTF-8"
+    "-Dnacos.home=192.168.0.10:8848"
+    "-Dnacos.namespace=neatlogic"
+    "-DenableNoSecret=true"
+    "-agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=5005"
+    "-XX:+HeapDumpOnOutOfMemoryError"
+    "-Xlog:gc*:file=D:\\neatlogic\\logs\\gc.log:time,uptime,level,tags"
+    "-Djava.io.tmpdir=D:\\neatlogic\\tmp" "-Djava.awt.headless=true"
+    "-DenableNoSecret=true"
+    "-Xbootclasspath/a:./config"
     -jar neatlogic-springboot-0.4.0.0-SNAPSHOT.jar
     */
 
