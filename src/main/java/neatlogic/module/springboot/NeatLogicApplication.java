@@ -93,6 +93,7 @@ public class NeatLogicApplication {
     将neatlogic-springboot模块打成neatlogic-springboot-0.4.0.0-SNAPSHOT.jar，随便放在某个目录下，然后将本模块下的config目录复制到该目录下，如下所示：
     /neatloigc
         neatlogic-springboot-0.4.0.0-SNAPSHOT.jar
+        logs
         config
             application.properties
             config.properties
@@ -114,6 +115,11 @@ public class NeatLogicApplication {
     -Djava.io.tmpdir=/neatlogic/tmp
     -Djava.awt.headless=true
     -DenableNoSecret=true
+    --add-opens=java.base/java.lang=ALL-UNNAMED
+    --add-opens=java.base/java.io=ALL-UNNAMED
+    --add-opens=java.base/java.util=ALL-UNNAMED
+    --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+    --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
     -Xbootclasspath/a:./config
     -jar neatlogic-springboot-0.4.0.0-SNAPSHOT.jar
     */
@@ -144,6 +150,11 @@ public class NeatLogicApplication {
     "-Xlog:gc*:file=D:\\neatlogic\\logs\\gc.log:time,uptime,level,tags"
     "-Djava.io.tmpdir=D:\\neatlogic\\tmp" "-Djava.awt.headless=true"
     "-DenableNoSecret=true"
+    "--add-opens=java.base/java.lang=ALL-UNNAMED"
+    "--add-opens=java.base/java.io=ALL-UNNAMED"
+    "--add-opens=java.base/java.util=ALL-UNNAMED"
+    "--add-opens=java.base/java.util.concurrent=ALL-UNNAMED"
+    "--add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED"
     "-Xbootclasspath/a:./config"
     -jar neatlogic-springboot-0.4.0.0-SNAPSHOT.jar
     */
@@ -158,6 +169,11 @@ public class NeatLogicApplication {
     -Dnacos.home=192.168.0.10:8848
     -Dnacos.namespace=neatlogic
     -DenableNoSecret=true
+    --add-opens=java.base/java.lang=ALL-UNNAMED
+    --add-opens=java.base/java.io=ALL-UNNAMED
+    --add-opens=java.base/java.util=ALL-UNNAMED
+    --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+    --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
      */
     /*
     参数解析：
