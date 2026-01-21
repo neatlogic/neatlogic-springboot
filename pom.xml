@@ -44,10 +44,6 @@
                 </dependency>
                 <dependency>
                     <groupId>com.neatlogic</groupId>
-                    <artifactId>neatlogic-document-online-commercial</artifactId>
-                </dependency>
-                <dependency>
-                    <groupId>com.neatlogic</groupId>
                     <artifactId>neatlogic-dr</artifactId>
                 </dependency>
                 <dependency>
@@ -224,10 +220,6 @@
         <dependency>
             <groupId>com.neatlogic</groupId>
             <artifactId>neatlogic-alert</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>com.neatlogic</groupId>
-            <artifactId>neatlogic-document-online</artifactId>
         </dependency>
         <dependency>
             <groupId>com.neatlogic</groupId>
