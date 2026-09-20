@@ -221,9 +221,5 @@
             <groupId>com.neatlogic</groupId>
             <artifactId>neatlogic-alert</artifactId>
         </dependency>
-        <dependency>
-            <groupId>com.neatlogic</groupId>
-            <artifactId>neatlogic-resources</artifactId>
-        </dependency>
     </dependencies>
 </project>
